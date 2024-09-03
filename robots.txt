@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://fuwari.vercel.app/sitemap-index.xml
+Sitemap: https://xyz.199105.xyz/sitemap-index.xml
