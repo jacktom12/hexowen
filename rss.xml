@@ -1,4 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>wen</title><description>blog</description><link>https://199105.xyz/</link><language>zh_CN</language><item><title>现在不流行责怪原生家庭了？</title><link>https://199105.xyz/posts/%E7%8E%B0%E5%9C%A8%E4%B8%8D%E6%B5%81%E8%A1%8C%E8%B4%A3%E6%80%AA%E5%8E%9F%E7%94%9F%E5%AE%B6%E5%BA%AD%E4%BA%86/</link><guid isPermaLink="true">https://199105.xyz/posts/%E7%8E%B0%E5%9C%A8%E4%B8%8D%E6%B5%81%E8%A1%8C%E8%B4%A3%E6%80%AA%E5%8E%9F%E7%94%9F%E5%AE%B6%E5%BA%AD%E4%BA%86/</guid><pubDate>Fri, 19 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>wen</title><description>blog</description><link>https://199105.xyz/</link><language>zh_CN</language><item><title>quest2头盔安装中文输入法</title><link>https://199105.xyz/posts/quest2%E5%A4%B4%E7%9B%94%E5%AE%89%E8%A3%85%E4%B8%AD%E6%96%87%E8%BE%93%E5%85%A5%E6%B3%95/</link><guid isPermaLink="true">https://199105.xyz/posts/quest2%E5%A4%B4%E7%9B%94%E5%AE%89%E8%A3%85%E4%B8%AD%E6%96%87%E8%BE%93%E5%85%A5%E6%B3%95/</guid><pubDate>Sat, 20 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;meta quest 头盔连个中文输入法都不能简单设置，这家公司对大陆用户简直可以说是歧视了。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;下载谷歌输入法 https://shurufa.sogou.com/wap/pc 其实这一步完全可以在头盔默认的浏览器里进行安装。如果无法安装，那就用PC的sidequest软件进行安装apk。&lt;/li&gt;
+&lt;li&gt;直接打开“语言和输入法”设置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;adb shell am start -a android.settings.INPUT_METHOD_SETTINGS
+#如果上面这条不行就下面这条打开总设置
+adb shell am start -n com.android.settings/.Settings
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;:::tip
+命令在sidequest里的run adb里输入
+:::
+&lt;code&gt;我的quest2 已经是半砖模式了，这个命令出来的是手势设置，所以换一种方式直接设置默认的输入法&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;adb shell ime enable com.sohu.inputmethod.sogou/.SogouIME
+
+adb shell ime set com.sohu.inputmethod.sogou/.SogouIME
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;成功后可以下载via 浏览器搭配使用，因为系统自带的浏览器是不能用搜狗输入法的，真恶心。
+当然不愿意折腾的直接用网页输入法，进行复制粘贴也行，B站重度用户也可以在这个网页直接中午快捷搜索。
+![](https://images.weserv.nl/?url=https://raw.githubusercontent.com/jacktom12/blogpic3/main/屏幕截图 2026-06-20 095005.png)&lt;/p&gt;
+&lt;p&gt;哎，我的quest2 已经很老了，感觉有点带不动了，连播放个苹果播客都卡的要死。 带不动了，最后我还是使用自带的浏览器搭配网页输入法使用了。&lt;/p&gt;
+</content:encoded></item><item><title>现在不流行责怪原生家庭了？</title><link>https://199105.xyz/posts/%E7%8E%B0%E5%9C%A8%E4%B8%8D%E6%B5%81%E8%A1%8C%E8%B4%A3%E6%80%AA%E5%8E%9F%E7%94%9F%E5%AE%B6%E5%BA%AD%E4%BA%86/</link><guid isPermaLink="true">https://199105.xyz/posts/%E7%8E%B0%E5%9C%A8%E4%B8%8D%E6%B5%81%E8%A1%8C%E8%B4%A3%E6%80%AA%E5%8E%9F%E7%94%9F%E5%AE%B6%E5%BA%AD%E4%BA%86/</guid><pubDate>Fri, 19 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
 &lt;p&gt;“如果丘处机没有路过牛家村,郭靖就不会流落大漠;没有郭靖的帮助,铁木真就会死在扎木合手上,蒙古各部就不会统一;蒙古不统一,就不会有西征,火药也就不会传入欧洲;没有火药, 骑士老爷的统治就坚不可摧,欧洲会一直处于黑暗的中世纪,后来的大航海就不会发生....,所有的一切,都怪丘处机,没事干吗路过牛家村啊”&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;code&gt;这样看是不是觉得很搞笑？&lt;/code&gt;
